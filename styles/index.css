@@ -1,0 +1,432 @@
+@import url("https://design.secura.net/secura-erater-vm/digital-design-system/styles/secura-utilities.css");
+@import url("components.css");
+@import url("homepage.css");
+@import url("my-policy.css");
+
+.sub-header-styles {
+  position: relative;
+  display: block;
+  padding-top: .4rem;
+}
+
+.sub-header-styles:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: .4rem;
+  background: #f2a900;
+  width: 100%;
+  max-width: 5rem;
+  content: "";
+  border-radius: .2rem;
+}
+
+.dark-background,
+.dark-background-mobile {
+  background-color: var(--dark-background, rgb(34, 34, 34, .3));
+  z-index: 3;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+nav.main-navigation {
+  z-index: 10;
+}
+
+.search-bar button[type="submit"] {
+  border: none;
+  background: transparent;
+}
+
+.search-bar button[type="submit"],
+.search-bar .close-search-container {
+  height: 3rem;
+  width: 3rem;
+  background: #ce9000;
+  border-radius: 50%;
+}
+
+.search-bar input[type="text"] {
+  border-bottom: .2rem solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: .5rem;
+  background: transparent;
+  font-size: 1.6rem;
+}
+
+.search-bar input[type="text"]:hover,
+.search-bar input[type="text"]:active,
+.search-bar input[type="text"]:focus {
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #fff;
+}
+
+.desktop-header {
+  padding: 1rem 2rem;
+}
+
+.desktop-header .right-nav .right-top-nav {
+  margin-bottom: 2rem;
+}
+
+.desktop-header .right-nav .right-top-nav ul li {
+  font-size: 1.4rem;
+}
+
+.desktop-header .extra-hover-tab .extra-hidden-padding {
+  padding-top: 1.5rem;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 2;
+}
+
+.desktop-header .extra-hover-tab .extra-hidden-padding ul:before {
+  content: "";
+  top: .5rem;
+  border-bottom: 1rem solid var(--secura-black);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.desktop-header .extra-hover-tab:hover ul {
+  display: block;
+}
+
+.desktop-header .extra-hover-tab i {
+  font-size: 1.2rem;
+}
+
+.desktop-header .login-screen {
+  z-index: 6;
+  min-width: 24rem;
+  height: 12rem;
+  display: none;
+}
+
+.display-login {
+  display: flex !important;
+}
+
+.desktop-header .login-screen > a {
+  flex: 1 1 50%;
+}
+
+.desktop-header .login-screen > a .gold-circle {
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.25s linear;
+  opacity: 0;
+}
+
+.desktop-header .login-screen > a:hover .gold-circle {
+  visibility: visible;
+  border-radius: 50%;
+  top: -55%;
+  left: 10%;
+  z-index: -1;
+  padding: 4.5rem;
+  opacity: 1;
+  border: .4rem dashed #f2a900;
+  animation-name: spin;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.desktop-header .login-screen .fa-solid {
+  font-size: 2.2rem;
+  margin-bottom: .5rem;
+}
+
+.search-opener {
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: .2s ease-in-out;
+}
+
+.desktop-header .search-opener:hover {
+  background: #f2a900;
+}
+
+.dropdown,
+.dropdown-last {
+  padding: 0 1.5rem;
+}
+
+.dropdown-last {
+  padding-right: 0;
+}
+
+.dropbtn {
+  padding-top: .5rem;
+}
+
+.dropbtn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0.4rem;
+  transition: .2s ease-in-out;
+  background: #f2a900;
+  border-radius: .2rem;
+}
+
+.dropdown:hover .dropbtn:after,
+.dropdown-last:hover .dropbtn:after {
+  width: 100%;
+}
+
+.dropdown-content {
+  left: 0;
+  z-index: 3;
+  padding: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.dropdown-content .header {
+  margin-bottom: 3rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-column {
+  flex: 1 1 25%;
+}
+
+.nav-column a {
+  font-size: 1.4rem;
+}
+
+.nav-column a.secondary-btn {
+  font-size: initial;
+}
+
+.nav-column .nav-img {
+  min-height: 10rem;
+}
+
+.nav-column .business-img-container {
+  background: url("../assets/business.jpg") no-repeat center center/cover;
+}
+
+.nav-column .farm-img-container {
+  background: url("../assets/farm.jpg") no-repeat center center/cover;
+}
+
+.nav-column .personal-img-container {
+  background: url("../assets/personal.jpg") no-repeat center center/cover;
+}
+
+.nav-column .claims-img-container {
+  background: url("https://www.secura.net/secura-erater-vm/images/background-images/internal-pages/-secura-interiorpgs_claims.jpg/Desktop") no-repeat center center/cover;
+}
+
+.mobile-header .top-section .left-col {
+  gap: 1rem;
+}
+
+.mobile-header .top-section .left-col p,
+.mobile-header .top-section .left-col .fa-solid,
+.mobile-header .side-menu-close .fa-solid,
+.mobile-header .side-menu-close p {
+  font-size: 2.2rem;
+}
+
+.mobile-header .right-col img {
+  transition: .2s ease-in-out;
+}
+
+.mobile-header .side-menu {
+  width: 85%;
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: -100%;
+  z-index: 100;
+  transition: .2s ease-in-out;
+  background: #fff;
+  overflow: auto;
+}
+
+.mobile-header .side-menu-close {
+  gap: 1rem;
+}
+
+.mobile-header .side-menu .side-menu-main li a {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.mobile-header .side-menu .side-menu-sub {
+  margin-top: 8rem;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+.mobile-header .side-menu .side-menu-sub li a,
+.mobile-header .side-menu .side-menu-sub li span,
+.mobile-header .side-menu .side-menu-sub li.search-opener {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.mobile-header .login-mobile-opener {
+  gap: 1rem;
+}
+
+.mobile-header .side-menu .side-menu-sub li.search-opener {
+  padding: unset;
+  width: unset;
+  height: unset;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.mobile-header .side-menu .login-mobile li a {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+footer .footer-content {
+  padding: 5rem 2rem;
+}
+
+footer .footer-content > div:not(:last-of-type) {
+  margin-bottom: 5rem;
+}
+
+.footer-links > div {
+  flex: 1 1 23.7%;
+}
+
+.footer-links > div ul li a {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+footer .awards-container img {
+  max-width: 10rem;
+}
+
+footer .awards-container img.reduce {
+  max-width: 6rem;
+}
+
+footer .awards-container img.enlarge {
+  max-width: 16rem;
+}
+
+footer .social-media a {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+footer .social-media a:first-of-type {
+  background-color: #3b5998;
+  font-size: 2.2rem;
+}
+
+footer .social-media a:nth-child(2) {
+  background-color: #00acee;
+}
+
+footer .social-media a:nth-child(3) {
+  background-color: #0e76a8;
+}
+
+footer .social-media a:last-of-type {
+  background: url("https://www.secura.net/secura-erater-vm/agents/welcome-kit/images/instagram-bg.png") no-repeat center center/cover;
+}
+
+footer .social-media .fab {
+  font-size: 2.2rem;
+}
+
+footer .copyright-misc-section p,
+footer .copyright-misc-section a {
+  font-size: 1.4rem;
+}
+
+@keyframes spin {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
+}
+
+@media screen and (min-width: 1025px) {
+  .big-text-section {
+    margin: 10rem 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header,
+  .dark-background-mobile {
+    display: block;
+  }
+
+  .search-bar form {
+    padding: 2rem 2rem;
+  }
+
+  .big-text-section > div > div {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  footer .social-media {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobile-header .right-col img {
+    max-width: 20rem;
+  }
+
+  .search-bar form {
+    padding: 2rem;
+  }
+
+  .big-text-section img:first-child {
+    left: -2rem;
+  }
+
+  .big-text-section img:nth-child(2) {
+    right: -2rem;
+  }
+
+  .footer-links > div {
+    flex: 1 1 100%;
+  }
+
+  .footer-links,
+  footer .awards-social-section {
+    gap: 5rem;
+  }
+}
