@@ -20,15 +20,13 @@
 }
 
 .hero > div > div {
+  max-width: 55rem;
   min-height: 95vh;
-}
-
-.hero > div > div {
   z-index: 2;
 }
 
 .hero > div > div > div {
-  flex: 1 1 48%;
+  margin-bottom: 5vh;
 }
 
 .hero h1 {
@@ -64,16 +62,6 @@ main > section h2 {
 
 #sec-2 > section:not(:last-of-type) {
   margin-bottom: 25vh;
-}
-
-#gr-parent .gr-imgs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-
-#gr-parent .gr-cols {
-  display: grid;
 }
 
 #ti-needs .copy-header:nth-child(2) {
@@ -209,7 +197,7 @@ main > section h2 {
 }
 
 #sec-iny .flex > div {
-  flex: 1 1 48%;
+  flex: 1 1 47%;
 }
 
 #sec-iny .secura-btn {
@@ -226,17 +214,36 @@ main > section h2 {
 }
 
 @media (width <= 1024px) {
-  #sec-why-be > div,
-  #ti-needs .three-col,
-  #gr-parent .gr-cols,
-  #gr-parent .gr-imgs {
+  #sec-why-be > div {
+    gap: 3rem;
+  }
+
+  #ti-needs .three-col {
     gap: 2rem;
+  }
+
+  .hero:after {
+    bottom: -15vh;
+  }
+}
+
+@media (width <= 850px) {
+  .sec-rdata > div {
+    flex: 1 1 28%;
+  }
+
+  #ti-needs .three-col > div {
+    flex: 1 1 100%;
+  }
+
+  #sec-cn > div > div > div {
+    width: 45%;
   }
 }
 
 @media (width <= 767px) {
   .hero {
-    background: linear-gradient(74.2deg, rgb(63, 68, 68) 5%, rgba(0, 0, 0, 0.35)), url(../assets/hero-banner.jpg) no-repeat 75% 50%/cover;
+    background: linear-gradient(74.2deg, rgb(63, 68, 68) 5%, rgba(0, 0, 0, 0.45)), url(../assets/hero-banner.jpg) no-repeat 75% 50%/cover;
   }
 
   #ti-needs h2:after {
@@ -254,14 +261,6 @@ main > section h2 {
 
   #sec-why-be > div:last-of-type {
     flex-direction: column-reverse;
-  }
-
-  #gr-parent .gr-imgs {
-    grid-template-columns: 1fr;
-  }
-
-  #ti-needs .three-col > div {
-    flex: 1 1 100%;
   }
 
   .sec-reviews,
