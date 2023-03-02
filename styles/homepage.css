@@ -264,7 +264,8 @@ main > section h2 {
   }
 
   .sec-reviews,
-  .sec-rdata {
+  .sec-rdata,
+  #sec-cn > div > div > div {
     width: 100%;
   }
 
@@ -283,9 +284,5 @@ main > section h2 {
 
   .sec-reviews .secondary-btn {
     margin-top: 6rem;
-  }
-
-  #sec-cn > div > div > div {
-    width: 100%;
   }
 }
