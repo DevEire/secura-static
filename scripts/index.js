@@ -21,4 +21,8 @@ $(function() {
     $(".side-menu").css("left", "-100%");
     $(".dark-background").removeClass("dark-background-mobile");
   });
+
+  $(".type-of-business div").click(function(){
+    $(this).find(".fa-check").toggle();
+  });
 });

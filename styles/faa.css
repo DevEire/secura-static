@@ -1,0 +1,139 @@
+.filters-box {
+  border: .2rem solid var(--secura-lightgrey);
+}
+
+.faa-container > div {
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.faa-container > div > div {
+  flex: 1 1 50%;
+}
+
+.the-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.faa-container h2 {
+  font-size: 1.8rem;
+}
+
+.results {
+  max-height: 58.119rem;
+  overflow: auto;
+}
+
+.individual-results {
+  border: .2rem solid var(--secura-lightgrey);
+}
+
+.fld {
+  padding-bottom: 3rem;
+}
+
+.fld:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  border: 1px solid #f2f2f2;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.name-and-location i {
+  font-size: 3rem;
+}
+
+#state {
+  padding: 0.5rem;
+  border: 0.1rem solid var(--secura-black, #3f4444);
+  font-size: 1.6rem;
+}
+
+#state:focus-visible,
+.form-section select:focus-visible {
+  outline: 0.1rem solid var(--secura-gold, #f2a900);
+  border: 0.1rem solid var(--secura-gold, #f2a900);
+}
+
+.type-of-business > div {
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.type-of-business i {
+  font-size: 2.4rem;
+}
+
+.type-of-business i.fa-check {
+  font-size: 3rem;
+  z-index: 1;
+  left: 52%;
+  bottom: -.25rem;
+  transform: translateX(-50%);
+}
+
+#zip-code,
+#agency-name,
+.faa-container select {
+  min-height: 4.5rem;
+}
+
+.faa-container label {
+  font-size: 1.4rem;
+}
+
+.type-of-business p {
+  font-size: 1.4rem;
+}
+
+.type-of-business .square {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  border: .2rem solid var(--secura-black);
+}
+
+.faa-container select {
+  border: .1rem solid var(--secura-black);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+@media (width <= 769px) {
+  .faa-container > div {
+    flex-direction: column-reverse;
+  }
+
+  .type-of-business {
+    flex-wrap: wrap;
+  }
+
+  .type-of-business > div {
+    flex: 1 1 46%;
+  }
+
+  form > div {
+    flex-wrap: wrap;
+  }
+
+  .the-map iframe {
+    min-height: 25vh;
+  }
+
+  .type-of-business,
+  .the-map.desktop-only {
+    display: none;
+  }
+
+  .dd-on-mob,
+  .the-map-on-mobile {
+    display: block;
+  }
+}
